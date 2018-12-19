@@ -27,6 +27,7 @@ IMAGE_PATHS = [os.path.join(im_dir, f) for f in os.listdir(im_dir) if check_file
 obj_classes = {1: 'Diver', 2: 'ROV'}
 drDetect = DiverDetection()
 
+
 for im_file in IMAGE_PATHS:
     print ("Testing {0}".format(im_file))
     frame = cv2.imread(im_file)
@@ -37,6 +38,7 @@ for im_file in IMAGE_PATHS:
 
     cv2.imshow("Annotated Output", frame)
     cv2.waitKey(2000) 
+
 
 
 

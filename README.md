@@ -2,18 +2,18 @@ This is a container for an autonomous diver-following project. Deep object detec
 
 - Paper link:  https://ieeexplore.ieee.org/document/8543168
 - Dataset collection information:  https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837 
-- A trained frozen model: provided in 'model_data' folder
+- A trained frozen model: provided in model_data folder
 
 ## Testing the detector
 For testing individual images, run the [test_detector.py](test_detector.py) file. Change the image directory (im_dir) to test other images of interest.
 
 | Multiple divers | Divers and ROVs | 
 |:--------------------|:----------------|
-| ![cmu-model](/test_data/res/7.jpg)     | ![mb-model-macbook](/test_data/res/1.jpg) |
+| ![det-7](/test_data/res/7.jpg)     | ![det-1](/test_data/res/1.jpg) |
 
 
 ## Testing the diver-tracker
-For testing on a diver-tracking video or sequences of images, run the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the 'test_data' folder. Change the argument values to test on other files.
+For testing on a diver-tracking video or sequences of images, run the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the test_data folder. Change the argument values to test on other files.
 
 
 ## ROS version

@@ -1,5 +1,7 @@
-Project for CNN-based diver following:
-
+#Project for CNN-based diver following
+>> Relevant papers: 
+    >> https://ieeexplore.ieee.org/document/8543168
+    >> https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837
   
 
 ## Testing the detector
@@ -10,9 +12,7 @@ For testing individual images, run the test_detector.py file
 ## Testing the diver-tracker
 Run the test_diver_tracker.py 
 
->> relevant papers: 
-    >> https://ieeexplore.ieee.org/document/8543168
-    >> https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837
+
 
 
 ## ROS version

@@ -1,3 +1,6 @@
+*** This folder the ROS-package version that is currently (Dec 2018) running on the Aqua MinneBot robot. 
+*** For more details visit our lab website: irvlab.cs.umn.edu  
+
 Project for CNN-based diver following:
 
 >> This project contain code for diver detection and publishing the target bounding box

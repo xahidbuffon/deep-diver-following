@@ -5,7 +5,7 @@ This is a container of modules for an autonomous diver-following project.
 For testing individual images, run the test_detector.py file
 
 | Multiple divers | Divers and ROVs | 
-|:---------|:--------------------|:----------------|
+|:--------------------|:----------------|
 | ![cmu-model](/test_data/res/7.jpg)     | ![mb-model-macbook](/test_data/res/1.jpg) |
 | ![cmu-model](/test_data/res/0.jpg)     | ![mb-model-macbook](/test_data/res/2.jpg) |
 

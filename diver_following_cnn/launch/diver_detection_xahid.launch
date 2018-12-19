@@ -1,0 +1,5 @@
+<launch>
+
+    <node pkg="diver_following_cnn" type="follow_go.py" name="follow_go" /> 
+
+</launch>

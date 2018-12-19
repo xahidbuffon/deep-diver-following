@@ -1,0 +1,11 @@
+<launch>
+    <arg name="follow_yaw_pitch_ctr" default="true" />
+    <node pkg="target_detection" type="bbox_yaw_pitch_controller.py" output="screen" name="bbox_yaw_pitch_controller">
+        <param name="follow_yaw_pitch_ctr"   value="$(arg follow_yaw_pitch_ctr)" />
+        <rosparam command="load" file="$(find target_detection)/data/bbox_yaw_pitch_ctr_pid_params_DIVER.yaml" />
+    </node>
+
+
+    <node pkg="diver_following_cnn" type="follow_go.py" name="follow_go" /> 
+
+</launch>

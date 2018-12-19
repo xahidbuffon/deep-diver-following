@@ -10,11 +10,7 @@ Project for CNN-based diver following:
     >> https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837
 
 
->> how to run:
-    >> the whole diver following module:
-	> launch: roslaunch diver_following_cnn diver_follow_xahid.launch
-
-    >> only the diver detection module:
-	> launch: roslaunch diver_following_cnn diver_detection_xahid.launch
-	> rosrun: rosrun diver_following_cnn follow_go.py
+>> The diver_following_cnn folder contain the ROS-package version 
+   > currently running on the Aqua MinneBot robot
+   > more details: irvlab.cs.umn.edu  
 

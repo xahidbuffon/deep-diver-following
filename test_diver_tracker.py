@@ -10,18 +10,18 @@ import cv2
 import os
 import glob
 import argparse
-from libs.diver_follower import FollowerPipeline
+# local libraries
+from libs.trackerPipeline import FollowerPipeline
 
-
-""" for testing (a single) diver tracking
-    use argument --test_vid to test video or sequence of images
-    input arguments:
-        --im_dir >> path of image folder
-        --vid    >> path of the test video file
-        --image_ext >> image extension
-"""
 
 if __name__ == '__main__':
+    """ for testing (a single) diver tracking 
+            > use argument --test_vid to test video or sequence of images
+        other arguments:
+            --im_dir >> path of image folder
+            --vid    >> path of the test video file
+            --image_ext >> image extension
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument('--im_dir', required=False, dest='im_dir', type=str, default='test_data/im3/', help='Folder containing images')
     parser.add_argument('--vid', required=False, dest='vid', type=str, default='test_data/test1.avi', help='Video file')
@@ -46,11 +46,6 @@ if __name__ == '__main__':
                 follower.ImageProcessor(frame, vizualize=True, wait_time=1)
 
         cap.release()
-
-
-
-
-
 
 
 

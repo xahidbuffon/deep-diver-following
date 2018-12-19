@@ -1,12 +1,11 @@
 #! /usr/bin/env python
-
 """
 Maintainer: Jahid (email: islam034@umn.edu)
 Interactive Robotics and Vision Lab
 http://irvlab.cs.umn.edu/
 
-
 Class for detecting diver using CNN-based model (we are usng ssd now)
+Any part of this repo can be used for academic and educational purposes only
 """
 
 import os
@@ -58,7 +57,6 @@ class DiverDetection:
         self.image_tensor = self.detection_graph.get_tensor_by_name('image_tensor:0')
         self.sess = tf.Session(graph=self.detection_graph)
 
-
     
     def filter_box_normal(self, normalized_box, im_h, im_w):
         """
@@ -73,7 +71,6 @@ class DiverDetection:
         if (BBox[0]>0 and BBox[2]>0 and BBox[1]<im_w and BBox[3]<im_h and area_>0.01*im_h*im_w):
             return BBox, True
         return BBox, False
-
 
 
     def Detect_diver(self, frame):
@@ -94,9 +91,7 @@ class DiverDetection:
         id_ = 0 # scores is sorted, most confident first (e.g., id_ = np.argmax(scores) = 0)
         if classes[id_] == 1 and scores[id_]>self.min_score_thresh:
             BBox, success_ = self.filter_box_normal(boxes[id_], im_height, im_width)
-
         return BBox, success_
-
 
 
     def Detect_multi_objs(self, frame):
@@ -119,7 +114,6 @@ class DiverDetection:
             BBox, success_ = self.filter_box_normal(boxes[id_], im_height, im_width)
             if success_: 
                 localized_objs.append((classes[id_], BBox))
-         
         return localized_objs
 
 

@@ -6,25 +6,23 @@ http://irvlab.cs.umn.edu/
 Any part of this repo can be used for academic and educational purposes only
 """
 
-import sys
-import os
 import cv2
-
 # local libraries
 from diverDetector import DiverDetection
 from bboxTracker import BoxTrackerKF
 from utils import draw_box_label
 
+
 class FollowerPipeline:
         """ 
-           Class for detecting diver (front right camera) and publish target bounding box 
+           Class for tracking a (single) diver through image sequences 
         """
 	def __init__(self, real_time=False):
 		self.drDetect = DiverDetection()
                 self.drTracker = BoxTrackerKF()
 
 
-	def ImageProcessor(self, img, vizualize=True, wait_time=1):
+	def ImageProcessor(self, img, vizualize=False, wait_time=1):
                 """ 
                    Process each frame
 			> detect diver
@@ -38,13 +36,17 @@ class FollowerPipeline:
                         box_estimated_ = self.drTracker.estimateTrackedBbox(BBox)
 			if not box_estimated_:
 				self.drTracker.init_tracker()
-			else:
-				self.annotate_and_vizualize(img, vizualize, wait_time)
-
+			self.annotate_and_vizualize(img, vizualize, wait_time)
 
 
 	def annotate_and_vizualize(self, img, vizualize=False, wait_time=1):
+                """ 
+                   Annotates bounding box, label and then shows it
+                """
 		if vizualize:
 			img = draw_box_label(img, self.drTracker.box, show_label=True)
 			cv2.imshow('test', img)
 			cv2.waitKey(wait_time)
+
+
+

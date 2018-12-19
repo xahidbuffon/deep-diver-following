@@ -12,6 +12,8 @@ Class for Kalman Filter-based bounding box tracker
 import numpy as np
 from numpy import dot
 from scipy.linalg import inv, block_diag
+# local libraries
+from utils import box_iou
 
 
 class BoxTrackerKF(): 
@@ -123,18 +125,7 @@ class BoxTrackerKF():
 
 
 
-def box_iou(a, b):
-    '''
-    Helper funciton to calculate intersection over the union of two boxes a and b
-     Bbox coordinates =>> {left, right, top, bottom}
-    '''
-    w_intsec = np.maximum (0, (np.minimum(a[1], b[1]) - np.maximum(a[0], b[0])))
-    h_intsec = np.maximum (0, (np.minimum(a[3], b[3]) - np.maximum(a[2], b[2])))
-    s_intsec = w_intsec * h_intsec
-    s_a = (a[1] - a[0])*(a[3] - a[2])
-    s_b = (b[1] - b[0])*(b[3] - b[2])
-  
-    return float(s_intsec)/(s_a + s_b -s_intsec)
+
 
 
 

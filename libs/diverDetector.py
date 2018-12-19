@@ -9,7 +9,6 @@ http://irvlab.cs.umn.edu/
 Class for detecting diver using CNN-based model (we are usng ssd now)
 """
 
-# ros/python/opencv/tensorflow libraries
 import os
 import sys
 import cv2
@@ -97,6 +96,31 @@ class DiverDetection:
             BBox, success_ = self.filter_box_normal(boxes[id_], im_height, im_width)
 
         return BBox, success_
+
+
+
+    def Detect_multi_objs(self, frame):
+        """
+          given an image, return the detected divers/robots {bounding boxes} 
+        """
+        im_height, im_width, _ = frame.shape
+        image = cv2.cvtColor(cv2.resize(frame, (300, 300)), cv2.COLOR_BGR2RGB)
+        output_dict = self.sess.run(self.tensor_dict, feed_dict={self.image_tensor: np.expand_dims(image, 0)})
+
+        output_dict['detection_classes'] = output_dict['detection_classes'][0].astype(np.uint8)
+        output_dict['detection_boxes'] = output_dict['detection_boxes'][0]
+        output_dict['detection_scores'] = output_dict['detection_scores'][0]
+        boxes, classes, scores = output_dict['detection_boxes'], output_dict['detection_classes'], output_dict['detection_scores']
+
+        # filter and return output for detections that we are confident about
+        N = sum(scores>self.min_score_thresh)
+        localized_objs = []
+        for id_ in xrange(N):
+            BBox, success_ = self.filter_box_normal(boxes[id_], im_height, im_width)
+            if success_: 
+                localized_objs.append((classes[id_], BBox))
+         
+        return localized_objs
 
 
 

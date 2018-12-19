@@ -4,8 +4,7 @@ This is a container of modules for an autonomous diver-following project.
 ## Testing the detector
 For testing individual images, run the test_detector.py file
 
-|:--------------------|:----------------|
-| ![inferent_result](./test_data/res/7.jpg)     | ![mb-model-macbook](./test_data/res/1.jpg) |
+| ![detection_res7](./test_data/res/7.jpg)     | ![detection_res1](./test_data/res/1.jpg) |
 
 ## Testing the diver-tracker
 Run the test_diver_tracker.py 

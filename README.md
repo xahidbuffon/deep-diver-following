@@ -6,7 +6,7 @@
 
 ## Testing the detector
 For testing individual images, run the test_detector.py file
-| ![inferent_result](./test_data/res/0.jpg)     | ![inferent_result](./test_data/res/4.jpg)     |
+| ![inferent_result](./test_data/res/0.jpg)     | ![inferent_result](./test_data/res/1.jpg)     | ![inferent_result](./test_data/res/7.jpg)     |
 
 
 ## Testing the diver-tracker

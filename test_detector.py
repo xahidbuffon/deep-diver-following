@@ -32,6 +32,7 @@ i=0
 for im_file in IMAGE_PATHS:
     print ("Testing {0}".format(im_file))
     frame = cv2.imread(im_file)
+    frame = cv2.resize(frame, (500, 375))
     localized_objs = drDetect.Detect_multi_objs(frame) 
  
     if len(localized_objs)>0:
@@ -39,7 +40,7 @@ for im_file in IMAGE_PATHS:
 
     #cv2.imshow("Annotated Output", frame)
     #cv2.waitKey(2000) 
-    cv2.imwrite(str(i)+'.jpg', cv2.resize(frame, (400, 300)))
+    cv2.imwrite(str(i)+'.jpg', frame)
     i += 1
 
 

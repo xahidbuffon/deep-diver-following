@@ -2,10 +2,10 @@ This is a container for an autonomous diver-following project. Deep object detec
 
 - Paper link:  https://ieeexplore.ieee.org/document/8543168
 - Dataset collection information:  https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837 
-- A trained frozen model: provided in 'model_data' 
+- A trained frozen model: provided in 'model_data' folder
 
 ## Testing the detector
-For testing individual images, run the [test_detector.py](test_detector.py) file. Change the image directory (im_dir) to test other images.
+For testing individual images, run the [test_detector.py](test_detector.py) file. Change the image directory (im_dir) to test other images of interest.
 
 | Multiple divers | Divers and ROVs | 
 |:--------------------|:----------------|
@@ -13,17 +13,13 @@ For testing individual images, run the [test_detector.py](test_detector.py) file
 
 
 ## Testing the diver-tracker
-Run the test_diver_tracker.py 
+For testing on a diver-tracking video or sequences of images, run the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the 'test_data' folder. Change the argument values to test on other files.
 
 
 ## ROS version
 - The diver_following_cnn folder contain the ROS-package version 
 - This version is currently running on the Aqua MinneBot robot (more details: http://irvlab.cs.umn.edu)
-- Paper:  https://ieeexplore.ieee.org/document/8543168
-
-
-Feel free to cite if you find anything useful. 
-
+- Feel free to cite the paper you find anything useful:  https://ieeexplore.ieee.org/document/8543168
 ```
 @article{islam2018towards,
   title={Towards a Generic Diver-Following Algorithm: Balancing Robustness and Efficiency in Deep Visual Detection},

@@ -17,7 +17,7 @@ For testing on a diver-tracking video or sequences of images, run the [test_dive
 
 | Closed water (pool) | Open water (ocean) | 
 |:--------------------|:----------------|
-| ![Watch the video](/test_data/res/7.jpg)](https://youtu.be/bx6R8uR7MC4)   | ![Watch the video](/test_data/res/1.jpg)](https://youtu.be/bx6R8uR7MC4) |
+| [![Watch the video](/test_data/res/7.jpg)](https://youtu.be/bx6R8uR7MC4)   | [![Watch the video](/test_data/res/1.jpg)](https://youtu.be/bx6R8uR7MC4) |
 
 
 

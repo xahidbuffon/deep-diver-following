@@ -28,6 +28,7 @@ obj_classes = {1: 'Diver', 2: 'ROV'}
 drDetect = DiverDetection()
 
 
+i=0
 for im_file in IMAGE_PATHS:
     print ("Testing {0}".format(im_file))
     frame = cv2.imread(im_file)
@@ -36,9 +37,10 @@ for im_file in IMAGE_PATHS:
     if len(localized_objs)>0:
         frame = draw_boxes_and_labels(frame, localized_objs, obj_classes)
 
-    cv2.imshow("Annotated Output", frame)
-    cv2.waitKey(2000) 
-
+    #cv2.imshow("Annotated Output", frame)
+    #cv2.waitKey(2000) 
+    cv2.imwrite(str(i)+'.jpg', cv2.resize(frame, (400, 300)))
+    i += 1
 
 
 

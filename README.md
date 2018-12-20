@@ -19,11 +19,12 @@ For testing on a diver-tracking video or sequences of images, run the [test_dive
 
 | frame t | frame t+n | frame t+2n | 
 |:--------------------|:----------------|:----------------
-| ![det-7](/test_data/res/86.jpg)     | ![det-1](/test_data/res/96.jpg) |   ![det-1](/test_data/res/106.jpg) | 
-| ![det-7](/test_data/res/1118.jpg)     | ![det-1](/test_data/res/1138.jpg) |   ![det-1](/test_data/res/1158.jpg) | 
+| ![det-86](/test_data/res/86.jpg)     | ![det-96](/test_data/res/96.jpg) |   ![det-106](/test_data/res/106.jpg) | 
+| ![det-1118](/test_data/res/1118.jpg)     | ![det-1138](/test_data/res/1138.jpg) |   ![det-1158](/test_data/res/1158.jpg) | 
 
 
-# Video demo: http://www.youtube.com/watch?v=9xukzT8dqzQ
+
+Video demo: http://www.youtube.com/watch?v=9xukzT8dqzQ
 
 
 

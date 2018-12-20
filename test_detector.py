@@ -37,7 +37,7 @@ for im_file in IMAGE_PATHS:
         frame = draw_boxes_and_labels(frame, localized_objs, obj_classes)
 
     cv2.imshow("Annotated Output", frame)
-    cv2.waitKey(1500) 
+    cv2.waitKey(1000) 
 
 
 

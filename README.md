@@ -17,8 +17,12 @@ For testing on a diver-tracking video or sequences of images, run the [test_dive
 
 
 
+| Multiple divers | Divers and ROVs | Divers and ROVs | 
+|:--------------------|:----------------|:----------------
+| ![det-7](/test_data/res/7.jpg)     | ![det-1](/test_data/res/1.jpg) |   ![det-1](/test_data/res/0.jpg) | 
 
-## ![Demo Video](http://www.youtube.com/watch?v=9xukzT8dqzQ)
+
+[![VID-DEMO](http://img.youtube.com/vi/9xukzT8dqzQ/0.jpg)](http://www.youtube.com/watch?v=9xukzT8dqzQ)
 
 
 

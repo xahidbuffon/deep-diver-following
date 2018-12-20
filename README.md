@@ -3,6 +3,7 @@ This is a container for an autonomous diver-following project. Deep object detec
 - Paper link:  https://ieeexplore.ieee.org/document/8543168
 - Dataset collection information:  https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837 
 - A trained frozen model: provided in model_data folder
+- Important packages: Python 2.7, OpenCV 3, SciPy 1.1.0, TensorFlow 1.11.0 (with object detection API) 
 
 ## Testing the detector
 For testing individual images, run the [test_detector.py](test_detector.py) file. Change the image directory (im_dir) to test other images of interest.
@@ -27,7 +28,7 @@ For testing on a diver-tracking video or sequences of images, run the [test_dive
 
 
 ## ROS version
-- The diver_following_cnn folder contain the ROS-package version 
+- The diver_following_cnn folder contain the ROS-kinetic package version 
 - This version is currently running on the Aqua MinneBot robot (more details: http://irvlab.cs.umn.edu)
 - Feel free to cite the paper you find anything useful:  https://ieeexplore.ieee.org/document/8543168
 ```

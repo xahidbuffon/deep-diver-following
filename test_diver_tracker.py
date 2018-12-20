@@ -24,7 +24,7 @@ if __name__ == '__main__':
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--im_dir', required=False, dest='im_dir', type=str, default='test_data/im3/', help='Folder containing images')
-    parser.add_argument('--vid', required=False, dest='vid', type=str, default='test_data/test1.avi', help='Video file')
+    parser.add_argument('--vid', required=False, dest='vid', type=str, default='test_data/test2.avi', help='Video file')
     parser.add_argument('--test_vid', required=False, dest='test_vid', type=bool, default=True, help='Test video or images')
     parser.add_argument('--image_ext', type=str, default='*.jpg')
     args = parser.parse_args()

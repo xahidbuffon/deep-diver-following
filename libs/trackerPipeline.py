@@ -20,7 +20,7 @@ class FollowerPipeline:
 	def __init__(self, real_time=False):
 		self.drDetect = DiverDetection()
                 self.drTracker = BoxTrackerKF()
-                self.i = 0
+                self.i = 610
 
 
 	def ImageProcessor(self, img, vizualize=False, wait_time=1):

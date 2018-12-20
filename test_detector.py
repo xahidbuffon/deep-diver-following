@@ -31,6 +31,7 @@ drDetect = DiverDetection()
 for im_file in IMAGE_PATHS:
     print ("Testing {0}".format(im_file))
     frame = cv2.imread(im_file)
+    frame = cv2.resize(frame, (500, 375))
     localized_objs = drDetect.Detect_multi_objs(frame) 
  
     if len(localized_objs)>0:

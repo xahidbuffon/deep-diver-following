@@ -7,24 +7,21 @@ This is a container for an autonomous diver-following project. Deep object detec
 ## Testing the detector
 For testing individual images, run the [test_detector.py](test_detector.py) file. Change the image directory (im_dir) to test other images of interest.
 
-| Multiple divers | Divers and ROVs | 
-|:--------------------|:----------------|
-| ![det-7](/test_data/res/7.jpg)     | ![det-1](/test_data/res/1.jpg) |
+| Single diver | Multiple divers | Divers and ROVs | 
+|:--------------------|:--------------------|:----------------|
+| ![det-7](/test_data/res/6.jpg) | ![det-7](/test_data/res/7.jpg)     | ![det-1](/test_data/res/1.jpg) |
 
 
 ## Testing the diver-tracker 
 For testing on a diver-tracking video or sequences of images, run the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the test_data folder. Change the argument values to test on other files.
 
 
+Video demo: http://www.youtube.com/watch?v=9xukzT8dqzQ
 
 | frame t | frame t+n | frame t+2n | 
 |:--------------------|:----------------|:----------------
 | ![det-86](/test_data/res/86.jpg)     | ![det-96](/test_data/res/96.jpg) |   ![det-106](/test_data/res/106.jpg) | 
 | ![det-1118](/test_data/res/1118.jpg)     | ![det-1138](/test_data/res/1138.jpg) |   ![det-1158](/test_data/res/1158.jpg) | 
-
-
-
-Video demo: http://www.youtube.com/watch?v=9xukzT8dqzQ
 
 
 

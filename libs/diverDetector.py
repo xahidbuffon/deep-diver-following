@@ -27,7 +27,7 @@ class DiverDetection:
         """
           initialize variables and flags
         """ 
-        self.data_dir = 'model_data/tf_1.4/'
+        self.data_dir = 'model_data/'
         self.min_score_thresh = 0.4
         self.CNN_init()
         

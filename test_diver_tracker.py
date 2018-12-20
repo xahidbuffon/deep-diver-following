@@ -25,7 +25,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--im_dir', required=False, dest='im_dir', type=str, default='test_data/im1/', help='Folder containing images')
     parser.add_argument('--vid', required=False, dest='vid', type=str, default='test_data/test1.avi', help='Video file')
-    parser.add_argument('--test_vid', required=False, dest='test_vid', type=bool, default=False, help='Test video or images')
+    parser.add_argument('--test_vid', required=False, dest='test_vid', type=bool, default=True, help='Test video or images')
     parser.add_argument('--image_ext', type=str, default='*.jpg')
     args = parser.parse_args()
 
@@ -36,7 +36,7 @@ if __name__ == '__main__':
         IMAGE_PATHS.sort(key=lambda f: int(filter(str.isdigit, f)))
         for im_file in IMAGE_PATHS:
             frame = cv2.imread(im_file)
-            follower.ImageProcessor(frame, vizualize=True, wait_time=1)           
+            follower.ImageProcessor(frame, vizualize=True, wait_time=10)           
     else:
         # test on a video file 
         counter=0   

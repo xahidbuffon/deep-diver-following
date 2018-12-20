@@ -32,7 +32,8 @@ class DiverDetection:
           initialize variables and flags
         """ 
         #self.data_dir = '/home/xahid/model_data_/diver_rcnn/'
-        self.data_dir = '/home/aqua/model_data_/diver_ssd/'
+        #self.data_dir = '/home/aqua/model_data_/diver_ssd/'
+        self.data_dir = '/home/aqua/model_data_/diver_cnn/'
         self.min_score_thresh = 0.1
         self.CNN_init()
         

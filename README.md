@@ -17,7 +17,8 @@ For testing on a diver-tracking video or sequences of images, run the [test_dive
 
 
 
-[![](http://img.youtube.com/vi/bx6R8uR7MC4/0.jpg)](http://www.youtube.com/watch?v=bx6R8uR7MC4 "test")
+
+[![VID-DEMO](http://img.youtube.com/vi/9xukzT8dqzQ/0.jpg)](http://www.youtube.com/watch?v=9xukzT8dqzQ)
 
 
 

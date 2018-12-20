@@ -20,6 +20,7 @@ class FollowerPipeline:
 	def __init__(self, real_time=False):
 		self.drDetect = DiverDetection()
                 self.drTracker = BoxTrackerKF()
+                self.i = 0
 
 
 	def ImageProcessor(self, img, vizualize=False, wait_time=1):
@@ -29,6 +30,7 @@ class FollowerPipeline:
 			> prepare and publish target bounding box
                 """
                 # diver detection
+                img = cv2.resize(img, (800, 600))
 		BBox, success_ = self.drDetect.Detect_diver(img)
 		n_, m_, _ = img.shape
 		if success_:
@@ -47,6 +49,7 @@ class FollowerPipeline:
 			img = draw_box_label(img, self.drTracker.box, show_label=True)
 			cv2.imshow('test', img)
 			cv2.waitKey(wait_time)
-
+                        cv2.imwrite('/home/xahid/datasets/diver_robot_test/output/'+str(self.i)+'.jpg', img)
+                        self.i+=1
 
 

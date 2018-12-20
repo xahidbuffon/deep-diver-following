@@ -38,12 +38,16 @@ if __name__ == '__main__':
             frame = cv2.imread(im_file)
             follower.ImageProcessor(frame, vizualize=True, wait_time=1)           
     else:
-        # test on a video file    
+        # test on a video file 
+        counter=0   
         cap = cv2.VideoCapture(args.vid)
         while(cap.isOpened()):
             ret, frame = cap.read()
             if frame is not None:
                 follower.ImageProcessor(frame, vizualize=True, wait_time=1)
+            else:
+                counter += 1
+                if counter > 10: break
 
         cap.release()
 

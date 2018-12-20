@@ -4,7 +4,6 @@ import sys
 import argparse
 from diver_follower import FollowerPipeline
 
-
 """
 Maintainer: Jahid (email: islam034@umn.edu)
 Interactive Robotics and Vision Lab
@@ -27,12 +26,10 @@ http://irvlab.cs.umn.edu/
 	> rosrun: rosrun diver_following_cnn follow_go.py
 """
 
-
 # for aqua
 go = FollowerPipeline(real_time=True)
 
 ''''
-# for laptop
 # rosrun diver_following_cnn follow_go.py --im_dir=/home/xahid/datasets/diver_robot_test/diver/oliv09/
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

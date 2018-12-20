@@ -1,10 +1,8 @@
 #! /usr/bin/env python
-
 """
 Maintainer: Jahid (email: islam034@umn.edu)
 Interactive Robotics and Vision Lab
 http://irvlab.cs.umn.edu/
-
 
 Class for detecting diver (front right camera) and publish target bounding box for following
 """

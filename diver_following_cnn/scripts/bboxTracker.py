@@ -5,7 +5,6 @@ Maintainer: Jahid (email: islam034@umn.edu)
 Interactive Robotics and Vision Lab
 http://irvlab.cs.umn.edu/
 
-
 Class for Kalman Filter-based bounding box tracker
 """
 

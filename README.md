@@ -32,11 +32,12 @@ Video demo: http://www.youtube.com/watch?v=9xukzT8dqzQ
 - Feel free to cite the paper you find anything useful:  https://ieeexplore.ieee.org/document/8543168
 ```
 @article{islam2018towards,
-  title={Towards a Generic Diver-Following Algorithm: Balancing Robustness and Efficiency in Deep Visual Detection},
+  title={{Toward a Generic Diver-Following Algorithm: Balancing Robustness and Efficiency in Deep Visual Detection}},
   author={Islam, Md Jahidul and Fulton, Michael and Sattar, Junaed},
-  journal={IEEE Robotics and Automation Letters (RA-L)},
+  journal={{IEEE Robotics and Automation Letters (RA-L)}},
   volume = {4},
   number = {1},
+  pages = {113--120},
   year={2018},
   publisher={IEEE}
 }

@@ -16,7 +16,7 @@ For testing individual images, run the [test_detector.py](test_detector.py) file
 For testing on a diver-tracking video or sequences of images, run the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the test_data folder. Change the argument values to test on other files.
 
 
-### Video demo: https://youtu.be/9xukzT8dqzQ
+#### Demo: https://youtu.be/9xukzT8dqzQ
 
 | frame t | frame t+n | frame t+2n | 
 |:--------------------|:----------------|:----------------

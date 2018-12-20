@@ -30,7 +30,7 @@ class FollowerPipeline:
 			> prepare and publish target bounding box
                 """
                 # diver detection
-                img = cv2.resize(img, (800, 600))
+                img = cv2.resize(img, (400, 300))
 		BBox, success_ = self.drDetect.Detect_diver(img)
 		n_, m_, _ = img.shape
 		if success_:

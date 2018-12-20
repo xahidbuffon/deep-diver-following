@@ -12,13 +12,13 @@ For testing individual images, run the [test_detector.py](test_detector.py) file
 | ![det-7](/test_data/res/7.jpg)     | ![det-1](/test_data/res/1.jpg) |
 
 
-## Testing the diver-tracker
+## Testing the diver-tracker 
 For testing on a diver-tracking video or sequences of images, run the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the test_data folder. Change the argument values to test on other files.
 
 
 
 
-[![VID-DEMO](http://img.youtube.com/vi/9xukzT8dqzQ/0.jpg)](http://www.youtube.com/watch?v=9xukzT8dqzQ)
+## ![Demo Video](http://www.youtube.com/watch?v=9xukzT8dqzQ)
 
 
 

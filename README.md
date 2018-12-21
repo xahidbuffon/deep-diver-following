@@ -1,12 +1,12 @@
 This is a container for an autonomous diver-following project. Deep object detection models are used for diver (and other objects such as ROV) detection. A simplified version of that is utilized for autonomous tracking (and following) of a (single) diver by an underwater robot. The ROS version, tested on Aqua-8 robot, is provided in the diver_following_cnn folder.
 
-- Paper link:  https://ieeexplore.ieee.org/document/8543168
-- Dataset collection information:  https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837 
-- A trained frozen model: provided in model_data folder
-- Important packages: Python 2.7, OpenCV 3, SciPy 1.1.0, TensorFlow 1.11.0 (with object detection API) 
+- Paper:  https://ieeexplore.ieee.org/document/8543168
+- Dataset information:  https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837 
+- The frozen graph of a trained model: provided in model_data folder
+- Important packages: Python 2.7, OpenCV 3, TensorFlow 1.11.0 (with object detection API)
 
 ## Testing the detector
-For testing individual images, run the [test_detector.py](test_detector.py) file. Change the image directory (im_dir) to test other images of interest.
+Use the [test_detector.py](test_detector.py) file for testing detection performances on individual images.
 
 | Single diver | Multiple divers | Divers and ROVs | 
 |:--------------------|:--------------------|:----------------|
@@ -14,7 +14,7 @@ For testing individual images, run the [test_detector.py](test_detector.py) file
 
 
 ## Testing the diver-tracker 
-For testing on a diver-tracking video or sequences of images, run the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the test_data folder. Change the argument values to test on other files.
+For testing diver-tracking on a video or sequences of images, use the [test_diver_tracker.py](test_diver_tracker.py) file. A couple of videos and image sequences are provided in the test_data folder. Change the argument values to test other files.
 
 
 #### Demo: https://youtu.be/9xukzT8dqzQ

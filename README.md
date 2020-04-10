@@ -1,8 +1,9 @@
-This is a container for an autonomous diver-following project. Deep object detection models are used for diver (and other objects such as ROV) detection. A simplified version of that is utilized for autonomous tracking (and following) of a (single) diver by an underwater robot. The ROS version, tested on Aqua-8 robot, is provided in the diver_following_cnn folder.
+This is a container for an autonomous diver-following project. Deep object detection models are used for diver (and other objects such as ROV) detection. A simplified version of that is utilized for autonomous tracking (and following) of a single diver by an underwater robot. The ROS version, tested on Aqua-8 robot, is provided in the diver_following_cnn folder.
 
 - Paper:  https://ieeexplore.ieee.org/document/8543168
 - Dataset information:  https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21837 
-- The frozen graph of a trained model: provided in model_data folder
+- Frozen graph of a trained (SSD MobileNet) model: provided in model_data folder
+- Weights for the CNN-based model proposed in the paper: available on request
 - Important packages: Python 2.7, OpenCV 3, TensorFlow 1.11.0 (with object detection API)
 
 ## Testing the detector
